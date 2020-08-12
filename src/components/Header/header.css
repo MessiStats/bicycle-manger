@@ -1,5 +1,5 @@
 .header {
-
+    background: #ffffff;
 }
 
 .header-top {
@@ -24,6 +24,16 @@
     text-align: center;
 }
 
+.breadcrumb-title :after {
+    position: absolute;
+    content: ' ';
+    left: 73px;
+    top: 39px;
+    border-top: 9px solid #ffffff;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+}
+
 .weather {
     text-align: right;
 }
@@ -32,7 +42,7 @@
     margin-right: 10px;
 }
 
-.weather-img img{
+.weather-img img {
     margin-right: 10px;
     height: 20px;
 }
