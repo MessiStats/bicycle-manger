@@ -1,6 +1,7 @@
 import React from 'react'
 import {Row, Col} from 'antd'
 
+import Home from './pages/home/home'
 import Footer from './components/Footer/footer'
 import Header from './components/Header/header'
 import NavLeft from './components/NavLeft/navLeft'
@@ -17,7 +18,7 @@ class Admin extends React.Component {
                 <Col span={20} className="main">
                     <Header/>
                     <Row className="content">
-
+                        <Home/>
                     </Row>
                     <Footer/>
                 </Col>

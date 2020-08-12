@@ -1,5 +1,5 @@
 import React from 'react'
-import {Menu} from 'antd';
+import {Menu} from 'antd'
 import menuList from '../../config/menuConfig'
 import './navLeft.css'
 import {MailOutlined, AppstoreOutlined} from '@ant-design/icons'
@@ -7,6 +7,7 @@ import {MailOutlined, AppstoreOutlined} from '@ant-design/icons'
 const {SubMenu} = Menu
 
 class NavLeft extends React.Component {
+
     state = {
         menuTreeNode: []
     }
@@ -18,16 +19,18 @@ class NavLeft extends React.Component {
         })
     }
 
+
+
     renderMeun = (data) => {
         return data.map(item => {
             if (item.children) {
                 return (
-                    <SubMenu key={item.key} title={item.title} icon={<MailOutlined />}>
+                    <SubMenu key={item.key} title={item.title} icon={<MailOutlined/>}>
                         {this.renderMeun(item.children)}
                     </SubMenu>
                 )
             }
-            return <Menu.Item icon={<AppstoreOutlined />} key={item.key} title={item.title}>{item.title}</Menu.Item>
+            return <Menu.Item icon={<AppstoreOutlined/>} key={item.key} title={item.title}>{item.title}</Menu.Item>
         })
     }
 
