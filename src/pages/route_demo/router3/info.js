@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-class Other extends React.Component {
+class Info extends React.Component {
     render() {
         return (
             <div>
@@ -15,6 +15,9 @@ class Other extends React.Component {
                     <li>
                         <Link to="/topics">Topics</Link>
                     </li>
+                    <li>
+                        <Link to="/island">island</Link>
+                    </li>
                 </ul>
                 {this.props.children}
             </div>
@@ -22,4 +25,4 @@ class Other extends React.Component {
     }
 }
 
-export default Other
+export default Info

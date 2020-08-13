@@ -10,13 +10,18 @@ class Home1 extends React.Component {
         return (
             <HashRouter>
                 <Other>
-                    <Route path="/" exact component={Main}/>
+                    <Route path="/main"  render={() =>
+                        <Main>
+                            <Route path="/main/a" exact component={About}/>
+                        </Main>
+                    }>
+                    </Route>
                     <Route path="/about" exact component={About}/>
                     <Route path="/topics" exact component={Topic}/>
                 </Other>
             </HashRouter>
         )
     }
-}
+}   
 
 export default Home1

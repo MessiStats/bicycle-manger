@@ -1,5 +1,6 @@
 import React from 'react'
 import {Menu} from 'antd'
+import {NavLink} from 'react-router-dom'
 import menuList from '../../config/menuConfig'
 import './navLeft.css'
 import {MailOutlined, AppstoreOutlined} from '@ant-design/icons'
@@ -19,8 +20,6 @@ class NavLeft extends React.Component {
         })
     }
 
-
-
     renderMeun = (data) => {
         return data.map(item => {
             if (item.children) {
@@ -30,7 +29,9 @@ class NavLeft extends React.Component {
                     </SubMenu>
                 )
             }
-            return <Menu.Item icon={<AppstoreOutlined/>} key={item.key} title={item.title}>{item.title}</Menu.Item>
+            return <Menu.Item icon={<AppstoreOutlined/>} key={item.key} title={item.title}>
+                <NavLink to={item.key}>{item.title}</NavLink>
+            </Menu.Item>
         })
     }
 

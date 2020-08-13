@@ -1,13 +1,9 @@
 import React from 'react'
-import { Button } from 'antd';
-import './app.less'
-import 'antd/dist/antd.css';
 
-function App() {
+function App(props) {
     return (
-        <div className="content">
-            hello world
-            <Button type="primary">Button</Button>
+        <div>
+            {props.children}
         </div>
     )
 }
