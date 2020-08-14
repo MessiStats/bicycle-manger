@@ -4,6 +4,7 @@ import App from './App'
 import Admin from './admin'
 import Login from './pages/login/login'
 import Buttons from './pages/ui/buttons/button'
+import Modals from './pages/ui/modals/modals'
 import NoMatch from './pages/nomatch/nomatch'
 
 class Irouter extends React.Component {
@@ -17,6 +18,7 @@ class Irouter extends React.Component {
                         <Admin>
                             <Switch>
                                 <Route path='/admin/ui/buttons' component={Buttons}/>
+                                <Route path='/admin/ui/modals' component={Modals}/>
                                 <Route component={NoMatch}/>
                             </Switch>
                         </Admin>
