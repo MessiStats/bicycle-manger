@@ -26,7 +26,7 @@ class Notice extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="admin currency">
                 <Card title="带有图标的通知提示框">
                     <Button type="primary" onClick={() => this.openNotification('success')}>Success</Button>
                     <Button type="primary" onClick={() => this.openNotification('info')}>Info</Button>

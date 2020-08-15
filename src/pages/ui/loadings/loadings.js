@@ -5,7 +5,7 @@ import 'antd/dist/antd.css'
 class Loading extends React.Component {
     render() {
         return (
-            <div>
+            <div className="admin currency">
                 <Card title="Spin study">
                     <Spin size="small"/>
                     <Spin style={{margin: '0 10px'}}/>

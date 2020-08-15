@@ -26,7 +26,7 @@ class Buttons extends React.Component {
     render() {
         const {loading, size} = this.state
         return (
-            <div>
+            <div className="admin currency">
                 <Card title="基础按钮">
                     <Button type="primary">Island</Button>
                     <Button>Island</Button>

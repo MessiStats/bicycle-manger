@@ -91,7 +91,7 @@ class Modals extends React.Component {
     render() {
         const {ModalText, Asyncvisible, confirmLoading, visible, loading} = this.state
         return (
-            <div>
+            <div className="admin currency">
                 <Card title="基础模态框">
                     <Button type="primary" onClick={() => this.handleOpen('showModal1')}>Open</Button>
                     <Button type="primary" onClick={() => this.handleOpen('showModal2')}>自定义页脚</Button>
